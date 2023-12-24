@@ -21,7 +21,9 @@ export default function Header() {
     <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-transparent">
       <nav className="flex justify-between items-center">
         <div>
-          <img src={logo} className="w-36  text-black" alt="logo" />
+          <a href="/">
+            <img src={logo} className="w-36 cursor-pointer" alt="logo" />
+          </a>
         </div>
         <div className="hidden lg:block font-medium">
           <ul className="flex gap-6 items-center ">
@@ -49,7 +51,7 @@ export default function Header() {
           <a href="/" className="hidden lg:block hover:text-[#FF4D30]">
             Sign in
           </a>
-          <button className="border rounded py-3 px-6 bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out hidden lg:block">
+          <button className="rounded py-3 px-6 bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out hidden lg:block">
             Register
           </button>
           <button
@@ -81,19 +83,34 @@ export default function Header() {
             >
               <Link to="/">Home</Link>
             </ul>
-            <ul  className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer" onClick={handleLinkClick}>
+            <ul
+              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              onClick={handleLinkClick}
+            >
               <Link to="/about">About</Link>
             </ul>
-            <ul  className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer" onClick={handleLinkClick}>
+            <ul
+              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              onClick={handleLinkClick}
+            >
               <Link to="/vehical-models">Vehicle Models</Link>
             </ul>
-            <ul  className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer" onClick={handleLinkClick}>
+            <ul
+              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              onClick={handleLinkClick}
+            >
               <Link to="/testimonial">Testimonial</Link>
             </ul>
-            <ul  className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer" onClick={handleLinkClick}>
+            <ul
+              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              onClick={handleLinkClick}
+            >
               <Link to="/our-team">Our Team</Link>
             </ul>
-            <ul  className="border rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer" onClick={handleLinkClick}>
+            <ul
+              className="border rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              onClick={handleLinkClick}
+            >
               <Link to="/contact">Contact</Link>
             </ul>
           </div>
@@ -103,5 +120,3 @@ export default function Header() {
     </header>
   );
 }
-  
-
