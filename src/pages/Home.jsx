@@ -7,6 +7,7 @@ import BookCar from "../components/BookCar";
 import Header from "../components/Header";
 import Feature from "../components/Feature";
 import VehicleModels from "../components/VehicleModels";
+import Banner from "../components/Banner";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       <BookCar />
       <Feature />
       <VehicleModels />
+      <Banner/>
     </div>
   );
 }

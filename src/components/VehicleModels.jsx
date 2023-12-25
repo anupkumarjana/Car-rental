@@ -30,16 +30,14 @@ export default function VehicleModels() {
               {carGroup.map((car) => (
                 <div
                   key={car.name}
+                  onClick={() => handleClick(car)}
                   className={` hover:bg-[#FF4D30] cursor-pointer ${
                     selectedCar === car
                       ? "bg-[#FF4D30] text-white"
                       : "bg-[#e9e9e9] text-black"
                   }`}
                 >
-                  <button
-                    onClick={() => handleClick(car)}
-                    className="px-6 py-4 text-lg font-semibold"
-                  >
+                  <button className="px-6 py-4 text-lg font-semibold">
                     {car.name}
                   </button>
                 </div>
@@ -48,9 +46,15 @@ export default function VehicleModels() {
           ))}
         </div>
         <div>
-          {selectedCar && <img src={selectedCar.img} alt={selectedCar.name} className="pt-12"/>}
+          {selectedCar && (
+            <img
+              src={selectedCar.img}
+              alt={selectedCar.name}
+              className="pt-12"
+            />
+          )}
         </div>
-        <div className="text-sm text-center w-[20%] h-64">
+        <div className="text-sm text-center w-full lg:w-[20%] h-64">
           {selectedCar && (
             <div className="text-center border border-black">
               <div className="flex bg-[#FF4D30] text-white items-center justify-center py-4">
