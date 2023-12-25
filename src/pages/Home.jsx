@@ -9,6 +9,7 @@ import Feature from "../components/Feature";
 import VehicleModels from "../components/VehicleModels";
 import Banner from "../components/Banner";
 import ChooseUs from "../components/ChooseUs";
+import Testimonial from "../components/Testimonial";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
       <VehicleModels />
       <Banner/>
       <ChooseUs/>
+      <Testimonial/>
     </div>
   );
 }

@@ -14,10 +14,10 @@ export default function ChooseUs() {
       <img src={image1} alt="car-img" />
       <div className="flex lg:flex-row lg:justify-start lg:items-start lg:text-start justify-center items-center text-center flex-col gap-24 lg:gap-52">
         <div className="flex flex-col gap-2 lg:justify-start lg:items-start items-center flex-wrap w-full lg:w-[100%]">
-          <h3 className="text-2xl font-semibold font-rubik">Why Choose Us</h3>
-          <h4 className="text-[2.7rem] font-bold leading-10">
+          <h2 className="text-2xl font-semibold font-rubik">Why Choose Us</h2>
+          <h3 className="text-[2.7rem] font-bold leading-10">
             Best valued deals you will ever find
-          </h4>
+          </h3>
           <p className="text-[#706F7B] py-6 font-rubik">
             Discover the best deals you'll ever find with our unbeatable offers.
             We're dedicated to providing you with the best value for your money,
