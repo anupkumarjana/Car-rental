@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Feature from "../components/Feature";
 import VehicleModels from "../components/VehicleModels";
 import Banner from "../components/Banner";
+import ChooseUs from "../components/ChooseUs";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
       <Feature />
       <VehicleModels />
       <Banner/>
+      <ChooseUs/>
     </div>
   );
 }
