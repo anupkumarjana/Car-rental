@@ -10,7 +10,7 @@ import VehicleModels from "../components/VehicleModels";
 import Banner from "../components/Banner";
 import ChooseUs from "../components/ChooseUs";
 import Testimonial from "../components/Testimonial";
-import FAQ from "../components/FAQ";
+import FAQ from "../components/FAQ"; 
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         style={{ backgroundImage: `url(${bgHome})` }}
       >
         <Header />
-        <div className="flex w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 ">
+        <div className="flex lg:flex-row flex-col-reverse  w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 ">
           <div className="flex flex-col justify-center text-center md:justify-start md:text-start py-20 flex-wrap gap-2">
             <p className="text-2xl font-bold">Plan your trip now</p>
             <h1 className="text-[3.5rem] font-bold leading-[60px]">
@@ -33,18 +33,17 @@ export default function Home() {
             </p>
             <div className="pt-10 flex md:justify-start justify-center items-center gap-10">
               <button className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-4 px-8 bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
-                {" "}
                 <p>Book Ride</p>{" "}
                 <span className="">
                   <FaRegCircleCheck />
-                </span>{" "}
+                </span>
               </button>
               <button className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-4 px-8 bg-black text-white hover:bg-white border-black hover:text-black transition-all duration-300 ease-in-out">
                 Learn More <FiArrowRightCircle />
               </button>
             </div>
           </div>
-          <div className="w-[90%] hidden md:block">
+          <div className="w-[90%]">
             <img src={home} alt="car" className="" />
           </div>
         </div>
