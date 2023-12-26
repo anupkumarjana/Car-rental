@@ -2,7 +2,7 @@
 
 <h2>About the project</h2>
 
-  <p>A <b>car rental</b> website is an online platform that allows users to rent cars for personal or business use. The website provides an easy-to-use interface for searching, comparing, and reserving cars from a wide selection of vehicles that vary in make, model, size, and price.</p>
+  <p>A <b>car rental</b>website simplifies finding and booking vehicles for personal or business use. With an easy interface, users can browse, compare, and reserve from a diverse selection of cars varying in make, model, size, and price. The platform offers convenience through detailed listings, aiding informed decisions. It streamlines the process, making searching and booking seamless. From compact city cars to luxurious sedans, it caters to diverse preferences. Users explore vehicle specifications and rental terms effortlessly. It's a go-to for tailored transportation solutions. Ideal for weekend getaways, business trips, or daily needs. The website ensures accessibility and flexibility in rental choices. A comprehensive repository for car rental options.</p>
 
 <p>Credits for the design goes to <a href='https://xpeedstudio.com/'>XpeedStudio</a></p>
 
@@ -18,6 +18,6 @@
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src='https://drive.google.com/file/d/1g1JpQt_kQhwOOQEY7zve5d42-sWtw8ax/view?usp=sharing'/>
+<img src='https://github.com/anupkumarjana/Car-rental/blob/main/src/assets/Screenshot/homepage.jpeg'/>
 
 </div>
