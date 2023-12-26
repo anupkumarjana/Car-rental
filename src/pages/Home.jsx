@@ -4,22 +4,21 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import bgHome from "../assets/hero/hero-bg.png";
 import home from "../assets/home/home.png";
 import BookCar from "../components/BookCar";
-import Header from "../components/Header";
 import Feature from "../components/Feature";
 import VehicleModels from "../components/VehicleModels";
 import Banner from "../components/Banner";
 import ChooseUs from "../components/ChooseUs";
 import Testimonial from "../components/Testimonial";
-import FAQ from "../components/FAQ"; 
+import FAQ from "../components/FAQ";
+import AppDownload from "../components/AppDownload";
 
-export default function Home() {
+export default function Home() {  
   return (
     <div className=" font-poppins w-full h-full bg-gradient-to-b from-[#f8f8f8] to-white">
       <div
         className="bg-no-repeat w-full h-full bg-right bg-contain "
         style={{ backgroundImage: `url(${bgHome})` }}
       >
-        <Header />
         <div className="flex lg:flex-row flex-col-reverse  w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 ">
           <div className="flex flex-col justify-center text-center md:justify-start md:text-start py-20 flex-wrap gap-2">
             <p className="text-2xl font-bold">Plan your trip now</p>
@@ -52,10 +51,11 @@ export default function Home() {
       <BookCar />
       <Feature />
       <VehicleModels />
-      <Banner/>
-      <ChooseUs/>
-      <Testimonial/>
-      <FAQ/>
+      <Banner />
+      <ChooseUs />
+      <Testimonial />
+      <FAQ />
+      <AppDownload/>
     </div>
   );
 }
