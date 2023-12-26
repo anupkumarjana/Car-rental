@@ -47,9 +47,16 @@ export default function FAQ() {
             <div key={qa.key} className="flex flex-col cursor-pointer">
               <div
                 className={`flex items-center justify-between px-10 py-4 ${
-                  expandedIndex === index ? "bg-[#FF4D30] text-white" : ""
+                  expandedIndex === index
+                    ? "bg-[#FF4D30] text-white shadow-custom-hovered "
+                    : ""
                 }`}
                 onClick={() => toggleExpand(index)} // Toggle on click
+                style={{
+                  transition: "background-color 0.3s ease-in-out",
+                  backgroundColor:
+                    expandedIndex === index ? "#FF4D30" : "white",
+                }}
               >
                 <h4 className="text-lg font-medium">{qa.q}</h4>
                 {expandedIndex === index ? (
@@ -64,12 +71,12 @@ export default function FAQ() {
               <div
                 className={`transition-max-height overflow-hidden ${
                   expandedIndex === index
-                    ? "max-h-[500px] transition-all ease-in-out duration-500"
-                    : "h=0 max-h-0 ease-in-out duration-500"
+                    ? "max-h-[500px] transition-all ease-in-out duration-700 translate-y-3"
+                    : "h=0 max-h-0 transition-all ease-in-out duration-500 "
                 }`}
               >
                 <div className="px-10">
-                  <p className="text-lg py-4 font-rubik text-[#706F7B]">
+                  <p className="text-[1rem] px-4 py-4 font-rubik text-[#706F7B]">
                     {qa.a}
                   </p>
                 </div>
