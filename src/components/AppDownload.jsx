@@ -6,7 +6,7 @@ import bg from "../assets/banners/bg02.png"
 export default function AppDownload() {
   return (
     <div
-      className="bg-[#f8f8f8] px-8 lg:px-20 py-32 mt-20 lg:mt-0"
+      className="bg-[#f8f8f8] px-8 lg:px-20 py-28 mt-20 lg:mt-0"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="lg:w-[50%] w-full flex flex-col gap-8 leading-11 justify-center items-center text-center lg:items-start lg:text-left">

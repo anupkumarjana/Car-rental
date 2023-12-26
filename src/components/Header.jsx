@@ -18,7 +18,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute">
+    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute z-[99999]">
       <nav className="flex justify-between items-center">
         <div>
           <a href="/">
@@ -75,44 +75,44 @@ export default function Header() {
         {(ref) => (
           <div
             ref={ref}
-            className="flex flex-col gap-6 w-full h-[100vh] fixed top-[72px] right-0 p-14 rounded-b-md bg-white shadow-md lg:hidden text-center font-medium"
+            className="flex flex-col gap-6 w-full h-[100vh] fixed top-0 right-0 p-14 rounded-b-md bg-white shadow-md lg:hidden text-center font-medium"
           >
-            <ul
-              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+            <div
+              className="border rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/">Home</Link>
-            </ul>
-            <ul
+            </div>
+            <div
               className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/about">About</Link>
-            </ul>
-            <ul
+            </div>
+            <div
               className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/vehical-models">Vehicle Models</Link>
-            </ul>
-            <ul
+            </div>
+            <div
               className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
-              <Link to="/testimonial">Testimonial</Link>
-            </ul>
-            <ul
+              <Link to="/testimonials">Testimonial</Link>
+            </div>
+            <div
               className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/our-team">Our Team</Link>
-            </ul>
-            <ul
+            </div>
+            <div
               className="border rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/contact">Contact</Link>
-            </ul>
+            </div>
           </div>
         )}
       </Transition>

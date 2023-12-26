@@ -6,7 +6,7 @@ import icon3 from "../assets/plan/icon3.png";
 
 export default function Feature() {
   return (
-    <div className="flex flex-col justify-center items-center py-36 lg:gap-6 px-8 lg:px-40 lg:py-16 ">
+    <div className="flex flex-col justify-center items-center py-20 lg:gap-6 px-8 lg:px-40 lg:py-16 ">
       <p className="text-2xl font-semibold">Plan your trip now</p>
       <h2 className="text-[2.7rem] font-bold text-center">
         Quick & easy car rental
