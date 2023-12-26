@@ -19,7 +19,7 @@ export default function Home() {
         className="bg-no-repeat w-full h-full bg-right-top bg-contain"
         style={{ backgroundImage: `url(${bgHome})` }}
       >
-        <div className="flex lg:flex-row flex-col-reverse  w-full px-8 lg:px-20 py-32 ">
+        <div className="flex lg:flex-row flex-col-reverse lg:h-screen  w-full px-8 lg:px-20 pt-32 ">
           <div className="flex flex-col justify-center text-center md:justify-start md:text-start py-20 flex-wrap gap-2">
             <p className="text-2xl font-bold">Plan your trip now</p>
             <h1 className="text-[3.3rem] font-bold leading-[60px]">
