@@ -1,4 +1,4 @@
-<div align='center'><img style="width:30%" src=https://github.com/anupkumarjana/Car-rental/blob/main/src/assets/logo/logo.png'/></div>
+<div align='center'><img style="width:30%" src='https://github.com/anupkumarjana/Car-rental/blob/main/src/assets/logo/logo.png'/></div>
 
 <h2>About the project</h2>
 
