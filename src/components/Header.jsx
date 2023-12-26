@@ -18,7 +18,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-[#f8f8f8]">
+    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute">
       <nav className="flex justify-between items-center">
         <div>
           <a href="/">

@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <div className=" font-poppins w-full h-full bg-gradient-to-b from-[#f8f8f8] to-white">
       <div
-        className="bg-no-repeat w-full h-full bg-right bg-contain "
+        className="bg-no-repeat w-full h-full bg-right-top bg-contain "
         style={{ backgroundImage: `url(${bgHome})` }}
       >
-        <div className="flex lg:flex-row flex-col-reverse  w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 ">
+        <div className="flex lg:flex-row flex-col-reverse  w-full px-8 lg:px-20 py-32 ">
           <div className="flex flex-col justify-center text-center md:justify-start md:text-start py-20 flex-wrap gap-2">
             <p className="text-2xl font-bold">Plan your trip now</p>
             <h1 className="text-[3.5rem] font-bold leading-[60px]">
@@ -42,7 +42,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-[90%]">
+          <div className="w-[90%] hidden lg:block">
             <img src={home} alt="car" className="" />
           </div>
         </div>

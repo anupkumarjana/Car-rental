@@ -44,7 +44,7 @@ export default function BookCar() {
 //   const [isClicked, setIsClicked]= useState(false)
 
   return (
-    <form className="w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 flex-wrap">
+    <form className="w-full px-8 lg:px-20 pb-20 flex-wrap">
       <div
         className="flex flex-col  bg-white gap-4 justify-center flex-wrap items-center lg:gap-6 lg:flex lg:flex-row lg:justify-between p-8 border shadow-md bg-fixed"
         style={{ backgroundImage: `url(${bgCarBook})` }}
