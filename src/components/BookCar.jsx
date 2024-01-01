@@ -51,6 +51,8 @@ export default function BookCar() {
 
   const handleClose = () => {
     setShowSuccess(false); // Close the div by updating the state
+    setShowSuccess1(false)
+    setShowError(false)
   };
   const handleClose1 = () => {
     setShowSuccess(false);
@@ -98,12 +100,25 @@ export default function BookCar() {
           {showError && (
             <div className="flex justify-between items-center bg-[#f8d7da] rounded px-10 py-4 mb-6 text-[#721c24] font-rubik text-lg font-medium">
               {" "}
-              <div className="">All fields are required!</div>
+              <span className="">All fields are required!</span>
+              <span
+                onClick={handleClose}
+                className="cursor-pointer text-xl font-bold"
+              >
+                <IoMdClose />
+              </span>
             </div>
           )}
           {showSuccess1 && (
-            <div className="bg-[#b5ef96] rounded px-10 py-4 mb-6 text-[#496f1e] font-rubik text-lg font-medium">
-              Check your mail to confirm booking!
+            <div className="flex justify-between items-center bg-[#ace28e] rounded px-10 py-4 mb-6 text-[#264f1a] font-rubik text-lg font-medium">
+              {" "}
+              <span className="">Check your mail to confirm booking!</span>
+              <span
+                onClick={handleClose}
+                className="cursor-pointer text-xl font-bold"
+              >
+                <IoMdClose />
+              </span>
             </div>
           )}
 
@@ -200,7 +215,8 @@ export default function BookCar() {
                   <div>
                     <div className="flex flex-col gap-2 lg:items-start items-center pt-8 lg:pt-0 ">
                       <h5 className="text-lg font-semibold text-[#FF4D30]">
-                        <span className="text-black">Car - </span>{inputValues.car}
+                        <span className="text-black">Car - </span>
+                        {inputValues.car}
                       </h5>
                       {CAR_DATA.map((carGroup, index) => (
                         <div key={index}>
@@ -248,7 +264,6 @@ export default function BookCar() {
           <div className="justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between">
             <div>
               <Dropdown
-              
                 icon={<FaCarSide />}
                 title=" Select Your Car Type"
                 name="car"
