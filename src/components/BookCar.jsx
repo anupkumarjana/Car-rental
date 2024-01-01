@@ -7,8 +7,8 @@ import bgCarBook from "../assets/book-car/book-bg.png";
 import { IoMdClose } from "react-icons/io";
 import { CAR_DATA } from "./CarData.js";
 import BookCarFrom from "./BookCarFrom.jsx";
-// import BookCarFrom from "./BookCarFrom.jsx";
-// import Header from "./Header";
+import "../custom.css"
+
 export default function BookCar() {
   const [inputValues, setInputValues] = useState({
     car: "",
@@ -90,12 +90,12 @@ export default function BookCar() {
   ];
 
   return (
-    <div className=" px-8 lg:px-20 pb-20 flex-wrap">
+    <div className="px-4 sm:px-8 lg:px-20 pb-20 flex-wrap box-border">
       <div
-        className="flex flex-col  bg-white gap-4 justify-center flex-wrap items-center lg:gap-6 lg:flex lg:flex-row lg:justify-between p-8 border shadow-md bg-fixed overflow-x-auto"
+        className="flex-inline flex-col bg-white gap-4 justify-center flex-wrap items-center lg:gap-6 lg:flex lg:flex-row lg:justify-between p-4 lg:p-8 border shadow-md bg-none lg:bg-fixed overflow-x-hidden"
         style={{ backgroundImage: `url(${bgCarBook})` }}
       >
-        <h1 className="text-2xl font-bold my-3">Book a car</h1>
+        <h1 className="text-xl lg:text-2xl font-bold my-3">Book a car</h1>
         <form onSubmit={handleSubmit} className="">
           {showError && (
             <div className="flex justify-between items-center bg-[#f8d7da] rounded px-10 py-4 mb-6 text-[#721c24] font-rubik text-lg font-medium">
@@ -125,7 +125,7 @@ export default function BookCar() {
           {showSuccess && (
             <div className="flex items-center justify-center">
               {" "}
-              <div className=" bg-white border shadow-lg absolute justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between w-full lg:max-w-[60%] z-[100000] top-[50%]">
+              <div className=" bg-white border shadow-lg absolute justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between w-full  z-[100000] top-[50%] lg:w-[60%]">
                 <div className="w-full flex justify-between items-center bg-[#FF4D30] px-4 py-2 text-white ">
                   <h3 className=" font-semibold text-2xl ">
                     COMPLETE RESERVATION
@@ -244,8 +244,8 @@ export default function BookCar() {
                     {/* ---------------------------------form--------------------------------- */}
 
                     <BookCarFrom />
-                    <div className="bg-[#f8f8f8] py-10 flex items-center justify-center">
-                      <button
+                    <div className="py-10 flex items-center justify-center">
+                      <button 
                         type="submit"
                         onClick={handleClose1}
                         className="font-rubik text-2xl font-medium rounded py-3 px-[100px] bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out mb-8 lg:mb-0"
@@ -257,11 +257,12 @@ export default function BookCar() {
                 </div>
               </div>
               <div>
-                {/* -------------------------------------form component-------------------------------------------------- */}
+                
               </div>
             </div>
           )}
-          <div className="justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between">
+          {/* -------------------------------------form component-------------------------------------------------- */}
+          <div className="justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between lg:gap-6">
             <div>
               <Dropdown
                 icon={<FaCarSide />}
@@ -282,7 +283,7 @@ export default function BookCar() {
                 options={pickUpCities} // Pass the options array directly
               />
             </div>
-            <div>
+            <div className="">
               <Dropdown
                 name="dropOffCity"
                 icon={<FaLocationDot />}
@@ -302,8 +303,8 @@ export default function BookCar() {
                   Pick up
                   <b className="text-[#FF4D30]">*</b>
                 </h4>
-              </label>
-              <div className="border w-full pl-2 py-3 text-sm text-zinc-500">
+              </label>  
+           
                 <input
                   type="date"
                   placeholder="dd-mm-yyyy"
@@ -312,9 +313,9 @@ export default function BookCar() {
                   onChange={handleInputChange}
                   name="pickUpDate"
                   value={inputValues.pickUpDate}
-                  className="outline-none cursor-pointer gap-56 bg-transparent"
+                  className="outline-none box-border w-full  cursor-pointer gap-0 lg:gap-[230px] bg-[#EFEFEF] border px-2 py-3 text-sm text-zinc-500"
                 />
-              </div>
+            
             </div>
 
             <div className="mb-2">
@@ -327,22 +328,22 @@ export default function BookCar() {
                   <b className="text-[#FF4D30]">*</b>
                 </h4>
               </label>
-              <div className="border w-full py-3 px-2 text-sm text-zinc-500 ">
+           
                 <input
                   type="date"
                   placeholder="dd-mm-yyyy"
                   onChange={handleInputChange}
                   name="dropOffDate"
                   value={inputValues.dropOffDate}
-                  className="outline-none cursor-pointer gap-56 bg-transparent"
+                  className="outline-none box-border w-full cursor-pointer gap-0 lg:gap-[226px]  bg-[#EFEFEF] border py-3 px-2 text-sm text-zinc-500"
                 />
               </div>
-            </div>
+            
 
-            <div className="flex justify-center items-center mt-8">
+            <div className="flex justify-center items-center mt-8 ">
               <button
                 type="submit"
-                className="font-rubik text-lg font-medium rounded py-3 px-[161px] bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out mb-8 lg:mb-0"
+                className="font-rubik text-lg font-medium rounded py-3  lg:px-[161px] w-full bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out mb-8 lg:mb-0"
               >
                 Search
               </button>

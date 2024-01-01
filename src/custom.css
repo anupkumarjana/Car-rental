@@ -6,3 +6,8 @@
     background-image: url("./assets/home/home-bg.png");
     width: 100%;
 }
+    input {
+    padding: 0.2em; 
+    box-sizing: border-box;
+    width: 100% 
+    } 
