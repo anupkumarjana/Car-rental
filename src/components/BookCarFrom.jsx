@@ -7,7 +7,7 @@ export default function BookCarFrom() {
         Personal Information
       </h5>
         <div className="flex gap-4 flex-wrap w-full items-center justify-center lg:justify-between">
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 First Name
@@ -24,7 +24,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 Last Name
@@ -41,7 +41,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 Contact Number
@@ -58,7 +58,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 Age
@@ -75,7 +75,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 Email
@@ -92,7 +92,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 Adhaar Number
@@ -109,7 +109,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 City
@@ -126,7 +126,7 @@ export default function BookCarFrom() {
               This field is required.
             </p>
           </div>
-          <div className="flex flex-col gap-2 pb-4">
+          <div className="flex flex-col gap-2 lg:pb-4 pb-0">
             <label className="flex items-center gap-2 text-[#706F7B]">
               <h4>
                 PIN Code

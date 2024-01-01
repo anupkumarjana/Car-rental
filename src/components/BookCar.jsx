@@ -158,13 +158,13 @@ export default function BookCar() {
                         </span>
                         <div className="flex flex-col gap-2 font-semibold">
                           <p>Pick-Up Date & Time</p>{" "}
-                          <div className="flex gap-4">
-                            <p className="text-[#706F7B] font-normal">
+                          <div className="">
+                            <span className="text-[#706F7B] font-normal">
                               {inputValues.pickUpDate}
-                            </p>
+                            </span>
                             <input
                               type="time"
-                              className="border outline-none"
+                              className="border outline-none mt-2"
                             />
                           </div>
                         </div>
@@ -175,13 +175,13 @@ export default function BookCar() {
                         </span>
                         <div className="flex flex-col gap-2 font-semibold">
                           <p>Drop-Off Date & Time</p>{" "}
-                          <div className="flex gap-4">
-                            <p className="text-[#706F7B] font-normal">
+                          <div className="">
+                            <span className="text-[#706F7B] font-normal">
                               {inputValues.dropOffDate}
-                            </p>
+                            </span>
                             <input
                               type="time"
-                              className="border outline-none"
+                              className="border outline-none mt-2"
                             />
                           </div>
                         </div>
@@ -201,7 +201,7 @@ export default function BookCar() {
                         <span>
                           <FaLocationDot />
                         </span>
-                        <div className="flex flex-col gap-2 font-semibold">
+                        <div className="flex flex-col gap-2 font-semibold pb-8">
                           <p>Drop-Off Location</p>{" "}
                           <p className="text-[#706F7B] font-normal">
                             {inputValues.dropOffCity}
@@ -223,7 +223,7 @@ export default function BookCar() {
                           {carGroup.map((car, carIndex) => {
                             if (car.name === inputValues.car) {
                               return (
-                                <div key={carIndex}>
+                                <div key={carIndex} className="flex items-center justify-center pt-0 lg:pt-8 lg:pb-0 pb-8">
                                   <img
                                     className="w-[90%]"
                                     src={car.img}
@@ -248,7 +248,7 @@ export default function BookCar() {
                       <button 
                         type="submit"
                         onClick={handleClose1}
-                        className="font-rubik text-2xl font-medium rounded py-3 px-[100px] bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out mb-8 lg:mb-0"
+                        className="font-rubik text-xl w-full lg:text-2xl font-medium rounded py-3 px-[100px] bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out mb-8 lg:mb-0"
                       >
                         Reserve Now
                       </button>
