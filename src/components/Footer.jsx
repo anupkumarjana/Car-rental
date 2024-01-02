@@ -56,6 +56,9 @@ export default function Footer() {
           </button>
         </div>
       </div>
+      <div className="flex justify-center items-center text center opacity-20">
+        <p>❤️ anup</p>
+      </div>
     </div>
   );
 }
