@@ -7,7 +7,7 @@ import bgCarBook from "../assets/book-car/book-bg.png";
 import { IoMdClose } from "react-icons/io";
 import { CAR_DATA } from "./CarData.js";
 import BookCarFrom from "./BookCarFrom.jsx";
-import "../custom.css"
+import "../custom.css";
 
 export default function BookCar() {
   const [inputValues, setInputValues] = useState({
@@ -42,6 +42,7 @@ export default function BookCar() {
     if (allInputsFilled) {
       setShowError(false);
       setShowSuccess(true);
+
       console.log("Form submitted:", inputValues);
     } else {
       setShowError(true);
@@ -51,13 +52,16 @@ export default function BookCar() {
 
   const handleClose = () => {
     setShowSuccess(false); // Close the div by updating the state
-    setShowSuccess1(false)
-    setShowError(false)
+    setShowSuccess1(false);
+    setShowError(false);
   };
   const handleClose1 = () => {
     setShowSuccess(false);
     setShowSuccess1(true);
   };
+
+
+
   const cars = [
     { key: 0, value: "Select your car type" },
     { key: 1, value: "VW Golf 6" },
@@ -92,7 +96,7 @@ export default function BookCar() {
   return (
     <div className="px-4 sm:px-8 lg:px-20 pb-20 flex-wrap box-border">
       <div
-        className="flex-inline flex-col bg-white gap-4 justify-center flex-wrap items-center lg:gap-6 lg:flex lg:flex-row lg:justify-between p-4 lg:p-8 border shadow-md bg-none lg:bg-fixed overflow-x-hidden"
+        className="flex-inline flex-col bg-white gap-4 justify-center flex-wrap items-center lg:gap-6 lg:flex lg:flex-row lg:justify-between p-4 lg:p-8 border shadow-md bg-fixed overflow-x-hidden"
         style={{ backgroundImage: `url(${bgCarBook})` }}
       >
         <h1 className="text-xl lg:text-2xl font-bold my-3">Book a car</h1>
@@ -121,11 +125,13 @@ export default function BookCar() {
               </span>
             </div>
           )}
-
+          
           {showSuccess && (
             <div className="flex items-center justify-center">
-              {" "}
-              <div className=" bg-white border shadow-lg absolute justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between w-full  z-[100000] top-[50%] lg:w-[60%]">
+             {/* for overlay effect */}
+              <div className="bg-[#4b4b4b4d] h-full right-0 top-0 w-full z-[999999999] fixed overflow-hidden"></div>{" "}
+             
+              <div className=" bg-white border shadow-lg absolute  justify-center flex-wrap items-center lg:flex lg:flex-row lg:justify-between w-full z-[999999999999] top-[100%] lg:w-[60%] h-[100vh] overflow-x-hidden overflow-y-scroll scroll-bar">
                 <div className="w-full flex justify-between items-center bg-[#FF4D30] px-4 py-2 text-white ">
                   <h3 className=" font-semibold text-2xl ">
                     COMPLETE RESERVATION
@@ -223,7 +229,10 @@ export default function BookCar() {
                           {carGroup.map((car, carIndex) => {
                             if (car.name === inputValues.car) {
                               return (
-                                <div key={carIndex} className="flex items-center justify-center pt-0 lg:pt-8 lg:pb-0 pb-8">
+                                <div
+                                  key={carIndex}
+                                  className="flex items-center justify-center pt-0 lg:pt-8 lg:pb-0 pb-8"
+                                >
                                   <img
                                     className="w-[90%]"
                                     src={car.img}
@@ -245,7 +254,7 @@ export default function BookCar() {
 
                     <BookCarFrom />
                     <div className="py-10 flex items-center justify-center">
-                      <button 
+                      <button
                         type="submit"
                         onClick={handleClose1}
                         className="font-rubik text-xl w-full lg:text-2xl font-medium rounded py-3 px-[100px] bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out mb-8 lg:mb-0"
@@ -256,9 +265,7 @@ export default function BookCar() {
                   </div>
                 </div>
               </div>
-              <div>
-                
-              </div>
+              <div></div>
             </div>
           )}
           {/* -------------------------------------form component-------------------------------------------------- */}
@@ -303,19 +310,18 @@ export default function BookCar() {
                   Pick up
                   <b className="text-[#FF4D30]">*</b>
                 </h4>
-              </label>  
-           
-                <input
-                  type="date"
-                  placeholder="dd-mm-yyyy"
-                  min={new Date().toLocaleDateString()}
-                  max="2030-12-31"
-                  onChange={handleInputChange}
-                  name="pickUpDate"
-                  value={inputValues.pickUpDate}
-                  className="outline-none box-border w-full  cursor-pointer gap-0 lg:gap-[230px] bg-[#EFEFEF] border px-2 py-3 text-sm text-zinc-500"
-                />
-            
+              </label>
+
+              <input
+                type="date"
+                placeholder="dd-mm-yyyy"
+                min={new Date().toLocaleDateString()}
+                max="2030-12-31"
+                onChange={handleInputChange}
+                name="pickUpDate"
+                value={inputValues.pickUpDate}
+                className="outline-none box-border w-full  cursor-pointer gap-0 lg:gap-[230px] bg-[#EFEFEF] border px-2 py-3 text-sm text-zinc-500"
+              />
             </div>
 
             <div className="mb-2">
@@ -328,17 +334,16 @@ export default function BookCar() {
                   <b className="text-[#FF4D30]">*</b>
                 </h4>
               </label>
-           
-                <input
-                  type="date"
-                  placeholder="dd-mm-yyyy"
-                  onChange={handleInputChange}
-                  name="dropOffDate"
-                  value={inputValues.dropOffDate}
-                  className="outline-none box-border w-full cursor-pointer gap-0 lg:gap-[226px]  bg-[#EFEFEF] border py-3 px-2 text-sm text-zinc-500"
-                />
-              </div>
-            
+
+              <input
+                type="date"
+                placeholder="dd-mm-yyyy"
+                onChange={handleInputChange}
+                name="dropOffDate"
+                value={inputValues.dropOffDate}
+                className="outline-none box-border w-full cursor-pointer gap-0 lg:gap-[226px]  bg-[#EFEFEF] border py-3 px-2 text-sm text-zinc-500"
+              />
+            </div>
 
             <div className="flex justify-center items-center mt-8 ">
               <button
