@@ -84,7 +84,7 @@ export default function BookCarFrom() {
             </label>
             <input
               required
-              type="text"
+              type="email"
               placeholder="Enter your email"
               className="border rounded px-4 py-2 bg-[#DBDBDB] outline-none"
             />

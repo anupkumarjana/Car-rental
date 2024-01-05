@@ -8,6 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import { CAR_DATA } from "./CarData.js";
 import BookCarFrom from "./BookCarFrom.jsx";
 import "../custom.css";
+import { cars, pickUpCities, dropOffCities } from "./BookCarData.js";
 
 export default function BookCar() {
   const [inputValues, setInputValues] = useState({
@@ -62,37 +63,7 @@ export default function BookCar() {
 
 
 
-  const cars = [
-    { key: 0, value: "Select your car type" },
-    { key: 1, value: "VW Golf 6" },
-    { key: 2, value: "Toyota Camry" },
-    { key: 3, value: "BMW 320 ModernLine" },
-    { key: 4, value: "Mercedes-Benz GLK" },
-    { key: 5, value: "VW Passat CC" },
-    { key: 6, value: "Audi A1 S-Line" },
-  ];
-
-  const pickUpCities = [
-    { key: 0, value: "Select pick up location" },
-    { key: 1, value: "Kolkata" },
-    { key: 2, value: "Bengaluru" },
-    { key: 3, value: "Delhi" },
-    { key: 4, value: "Noida" },
-    { key: 5, value: "Gurgaon" },
-    { key: 6, value: "Manali" },
-    { key: 7, value: "Sikkim" },
-  ];
-  const dropOffCities = [
-    { key: 0, value: "Select drop off location" },
-    { key: 1, value: "Kolkata" },
-    { key: 2, value: "Bengaluru" },
-    { key: 3, value: "Delhi" },
-    { key: 4, value: "Noida" },
-    { key: 5, value: "Gurgaon" },
-    { key: 6, value: "Manali" },
-    { key: 7, value: "Sikkim" },
-  ];
-
+  
   return (
     <div className="px-4 sm:px-8 lg:px-20 pb-20 flex-wrap box-border">
       <div
